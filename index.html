@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up & Sign In</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main-container">
+        <div id="signUpContainer" class="container active">
+            <h2>Sign Up</h2>
+            <form id="signUpForm">
+                <div class="input-group">
+                    <label for="username">Username</label>
+                    <input type="text" id="username" name="username" required>
+                </div>
+                <div class="input-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="input-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+                <div class="input-group">
+                    <label for="confirmPassword">Confirm Password</label>
+                    <input type="password" id="confirmPassword" name="confirmPassword" required>
+                </div>
+                <button type="submit">Sign Up</button>
+            </form>
+            <p>Already have an account? <a id="toSignIn">Sign In</a></p>
+            <div id="signUpMessage" class="message"></div>
+        </div>
+
+        <div id="signInContainer" class="container">
+            <h2>Sign In</h2>
+            <form id="signInForm">
+                <div class="input-group">
+                    <label for="username">Username</label>
+                    <input type="text" id="signInUsername" name="username" required>
+                </div>
+                <div class="input-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="signInPassword" name="password" required>
+                </div>
+                <button type="submit">Sign In</button>
+            </form>
+            <p>Don't have an account? <a id="toSignUp">Sign Up</a></p>
+            <div id="signInMessage" class="message"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
